@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bars</title>
+    <style>
+        /* Global Heading */
+        h1 {
+            background-color: lightblue;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            margin: 0;
+        }
+
+        /* Vertical Navigation Bar Styles */
+        .vertical-navbar {
+            width: 200px;
+            border: 2px solid black;
+            padding: 5px;
+        }
+
+        .vertical-navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .vertical-navbar li {
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: lightblue;
+            margin-bottom: 5px;
+        }
+
+        .vertical-navbar li:hover {
+            background-color: orange;
+        }
+
+        .vertical-navbar a {
+            text-decoration: none;
+            color: blue;
+            display: block;
+        }
+        .vertical-navbar a:hover{
+            color: white;
+        }
+
+        /* Horizontal Navigation Bar Styles */
+        .horizontal-navbar {
+            width: 500px;
+            border: 2px solid black;
+            padding: 5px;
+        }
+
+        .horizontal-navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .horizontal-navbar li {
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: lightgray;
+            border-left: 2px solid blue;
+        }
+
+        .horizontal-navbar li:hover {
+            background-color: gray;
+            border-left: none;
+        }
+
+        .horizontal-navbar a {
+            text-decoration: none;
+            color: blue;
+            display: block;
+        }
+
+        .horizontal-navbar a:hover {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Task 2</h1>
+
+    <!-- Vertical Navigation Bar -->
+    <h3 style="font-weight: bold;">Vertical Navigation Bar</h3>
+    <div class="vertical-navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Java</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">Bootstrap</a></li>
+        </ul>
+    </div>
+
+    <br><br>
+
+    <!-- Horizontal Navigation Bar -->
+    <h3 style="font-weight: bold;">Horizontal Navigation Bar</h3>
+    <div class="horizontal-navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Java</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+        </ul>
+    </div>
+</body>
+</html>

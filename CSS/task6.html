@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <style>
+        body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        }
+
+        .login-container {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 350px;
+        text-align: center;
+        }
+
+        .avatar img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        }
+
+        .input-group {
+        margin-bottom: 15px;
+        text-align: left;
+        }
+
+        .input-group label {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 10px;
+        }
+
+        .input-group input {
+        width: 95%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        }
+
+        .actions {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+        }
+
+        .btn {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        }
+
+        .btn.login {
+        background-color: #4CAF50;
+        color: #fff;
+        width: 100%;
+        }
+
+        .btn.cancel {
+        background-color: #f44336;
+        color: #fff;
+        }
+
+        .options {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+
+        .forgot-password {
+        color: #007BFF;
+        text-decoration: none;
+        margin-top: 10px;
+        }
+
+        .forgot-password:hover {
+        text-decoration: underline;
+        }
+        .actions2{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+        }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="avatar">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Male Avatar">
+    </div>
+    <form>
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Enter Username">
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter Password">
+      </div>
+      <div class="actions">
+        <button type="submit" class="btn login">Login</button>
+      </div>
+      <div class="options">
+        <label>
+          <input type="checkbox"> Remember me
+        </label>        
+      </div>
+      <div class="actions2">
+        <button type="button" class="btn cancel">Cancel</button>
+        <a href="#" class="forgot-password">Forgot password?</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

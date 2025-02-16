@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethnus Layout</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #00bcd4;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+        .nav-bar {
+            background-color: #aaaaaa;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-links:first-child{
+            margin-left: 20px;
+        }
+        .nav-links:last-child{
+            margin-right: 20px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 50px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: White;
+            font-weight: bold;
+        }
+        .side-content {
+            background-color: #696969;
+            color: white;
+            padding: 10px;
+            height: 100vh;
+            text-align: center;
+        }
+        .main-content {
+            padding: 20px;
+            text-align: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Ethnus Layout</h1>
+    </div>
+    <div class="nav-bar">
+        <div class="nav-links">
+            <a href="#">HOME</a>
+            <a href="#">MENU</a>
+            <a href="#">ABOUT</a>
+            <a href="#">CONTACT</a>
+        </div>
+        <div class="nav-links">
+            <a href="#">SIGNUP</a>
+            <a href="#">LOGIN</a>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 main-content">
+                <p>Write your content here</p>
+            </div>
+            <div class="col-md-2 side-content">
+                <p>This is</p>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>

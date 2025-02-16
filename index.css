@@ -1,0 +1,95 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #d6e5ff;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: #00246B;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Personal Info Section */
+  .info-section {
+    background: #ffffff;
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .personal-info p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  
+  .personal-info a {
+    color: #003db8;
+    text-decoration: none;
+  }
+  
+  .personal-info a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Assignment Table */
+  .assignment-table {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .assignment-table h2 {
+    color: #00246B;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .assignment-table table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+  }
+  
+  .assignment-table th,
+  .assignment-table td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+  }
+  
+  .assignment-table th {
+    background: #00246B;
+    color: white;
+  }
+  
+  .assignment-table tr:nth-child(even) {
+    background: #f2f2f2;
+  }
+  
+  .assignment-table a {
+    color: #00246B;
+    text-decoration: none;
+  }
+  
+  .assignment-table a:hover {
+    text-decoration: underline;
+  }
+  
