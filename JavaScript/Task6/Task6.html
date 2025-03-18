@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: #fafafa;
+            font-family: Arial, sans-serif;
+        }
+
+        .login-container {
+            background-color: #ffffff;
+            border: 1px solid #dbdbdb;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            text-align: center;
+            width: 300px;
+        }
+
+        .title {
+            font-family: 'Lucida Handwriting', cursive;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            display: flex;
+            align-items: center;
+            background-color: #fafafa;
+            border: 1px solid #dbdbdb;
+            border-radius: 6px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .input-group .icon {
+            margin-right: 8px;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            border: none;
+            outline: none;
+            background: transparent;
+        }
+
+        .login-btn {
+            width: 100%;
+            background-color: #0095F6;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 10px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .login-btn:hover {
+            background-color: #0078E6;
+        }
+
+        .options {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+            font-size: 0.9em;
+        }
+
+        .forgot-link {
+            color: #0095F6;
+            text-decoration: none;
+        }
+
+        .signup-text {
+            margin-top: 15px;
+            font-size: 0.9em;
+        }
+
+        .signup-link {
+            color: #0095F6;
+            text-decoration: none;
+        }
+
+        .error {
+            color: red;
+            font-size: 0.8em;
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1 class="title">Instagram</h1>
+
+        <form id="loginForm" onsubmit="return validateLogin()">
+            <div class="input-group">
+                <span class="icon">👤</span>
+                <input type="text" id="username" placeholder="Username">
+            </div>
+            <span class="error" id="usernameError"></span>
+
+            <div class="input-group">
+                <span class="icon">🔒</span>
+                <input type="password" id="password" placeholder="Password">
+            </div>
+            <span class="error" id="passwordError"></span>
+
+            <button type="submit" class="login-btn">Log in</button>
+
+            <div class="options">
+                <label>
+                    <input type="checkbox" id="rememberMe"> Remember me
+                </label>
+                <a href="#" class="forgot-link">Forgot Password?</a>
+            </div>
+
+            <div class="signup-text">
+                Don't have an account? <a href="#" class="signup-link">Sign up here.</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="Task6.js"></script>
+</body>
+</html>

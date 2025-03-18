@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Animation</title>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .animation-container {
+            width: 600px;
+        }
+        img {
+            position: relative;
+            width: 300px;
+            height: auto;
+        }
+        h2 {
+            color: #001f3f;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        button {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 8px 20px;
+            margin: 5px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="animation-container">
+        <img id="train" src="img.png" alt="Train Animation">
+        <h2>Click the following buttons to handle animation</h2>
+
+        <button onclick="startAnimation()">Start</button>
+        <button onclick="stopAnimation()">Stop</button>
+    </div>
+
+    <script src="Task7.js"></script>
+</body>
+</html>

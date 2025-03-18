@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="Task9.css">
+</head>
+<body>
+    <div id="welcomePage" class="container">
+        <h1>Welcome to User Management</h1>
+        <p>Use the buttons below to navigate.</p>
+        <button class="btn blue" onclick="showRegisterForm()">Register a User</button>
+        <button class="btn green" onclick="showRegisteredUsers()">View Registered Users</button>
+    </div>
+
+    <div id="registrationForm" class="container hidden">
+        <h2>User Registration</h2>
+        <input type="text" id="name" placeholder="Name">
+        <input type="email" id="email" placeholder="Email">
+        <input type="text" id="contact" placeholder="Contact">
+        <textarea id="address" placeholder="Address"></textarea>
+        <button class="btn blue" onclick="registerUser()">Register</button>
+        <button class="btn gray" onclick="showRegisteredUsers()">View Registered Users</button>
+    </div>
+
+    <div id="registeredUsers" class="container hidden">
+        <h2>Registered Users</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                    <th>Address</th>
+                    <th>Action</th> <!-- New Column for Delete Button -->
+                </tr>
+            </thead>
+            <tbody id="userTableBody"></tbody> <!-- JavaScript will add rows here -->
+        </table>
+        <button class="btn blue" onclick="showRegisterForm()">Register More Users</button>
+    </div>
+
+    <script src="Task9.js"></script>
+</body>
+</html>
